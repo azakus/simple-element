@@ -1,0 +1,22 @@
+{
+  "name": "simple",
+  "homepage": "https://github.com/azakus/simple-element",
+  "authors": [
+    "Daniel Freedman <dfreedm@google.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~1.2.1"
+  }
+}

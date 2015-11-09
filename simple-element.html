@@ -1,0 +1,24 @@
+<dom-module id="simple-element">
+  <template>
+    <template is="dom-repeat" items="[[list]]">
+      <button>[[item]]</button>
+    </template>
+  </template>
+  <script>
+    if (HTMLTemplateElement.bootstrap) {
+      var currentDoc = document._currentScript.ownerDocument;
+      HTMLTemplateElement.bootstrap(currentDoc);
+    }
+    Polymer({
+      is: 'simple-element',
+      properties: {
+        list: {
+          type: Array,
+          value: function() {
+            return 'Hello World'.split('')
+          },
+        }
+      }
+    });
+  </script>
+</dom-module>
